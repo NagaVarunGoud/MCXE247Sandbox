@@ -1,0 +1,182 @@
+Trivially needed symbols: __assert_func/1 _start/0
+
+
+Initial Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _start/0 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x2488140
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x7d54cda0c220
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: main/2 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _start/0 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: main/2 
+
+
+Initial Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _start/0 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: main/2 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _start/0 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: main/2 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: _start/0 (10631108 (estimated locally),1.00 per call) 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body nonfreeing_fn executed_once
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once
+  Called by: 
+  Calls: main/2 (10631108 (estimated locally),1.00 per call) 
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+main/2 (main)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__assert_func/1 (__assert_func)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.__assert_func (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) nonfreeing_fn executed_once
+  Called by: 
+  Calls: 
+_start/0 (_start)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text._start (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) executed_once
+  Called by: 
+  Calls: 

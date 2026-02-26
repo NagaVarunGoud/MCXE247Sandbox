@@ -1,0 +1,3 @@
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Sandboxes/MCXE247Sandbox/build/CMakeFiles/MCXE247Sandbox.dir
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Sandboxes/MCXE247Sandbox/build/CMakeFiles/edit_cache.dir
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Sandboxes/MCXE247Sandbox/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+# ninja log v5
+0	18	1772101796850980828	CMakeFiles/MCXE247Sandbox.dir/Debug/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/startup_MCXE247.S.obj	1583366d56c94861
+2	23	1772101796856980828	CMakeFiles/MCXE247Sandbox.dir/Debug/src/fsl_memcpy.S.obj	4057a274e85b81c1
+0	26	1772101796859980828	CMakeFiles/MCXE247Sandbox.dir/Debug/src/min_runtime.c.obj	59235a79abd91b43
+2	92	1772101796925980834	CMakeFiles/MCXE247Sandbox.dir/Debug/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_common.c.obj	f5836aead100a0d5
+0	94	1772101796927987743	CMakeFiles/MCXE247Sandbox.dir/Debug/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/system_MCXE247.c.obj	bec48d547b6dd353
+1	110	1772101796941980835	CMakeFiles/MCXE247Sandbox.dir/Debug/src/board.c.obj	e9afa07e73ce3918
+3	110	1772101796941980835	CMakeFiles/MCXE247Sandbox.dir/Debug/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_gpio.c.obj	bded490458daab70
+1	110	1772101796942980836	CMakeFiles/MCXE247Sandbox.dir/Debug/src/hardware_init.c.obj	47695cc13fabf4e
+1	111	1772101796945414247	CMakeFiles/MCXE247Sandbox.dir/Debug/src/gpio_input_interrupt.c.obj	1d7edbf3ff137b11
+1	118	1772101796950980836	CMakeFiles/MCXE247Sandbox.dir/Debug/src/pin_mux.c.obj	c5fb025b5a014106
+1	122	1772101796954980837	CMakeFiles/MCXE247Sandbox.dir/Debug/src/clock_config.c.obj	3a419f590bb5dd25
+2	147	1772101796980980839	CMakeFiles/MCXE247Sandbox.dir/Debug/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.c.obj	ba00b1019ec5f0af
+147	179	1772101797000966643	Debug/MCXE247Sandbox.elf	6a668dfcfac9438a

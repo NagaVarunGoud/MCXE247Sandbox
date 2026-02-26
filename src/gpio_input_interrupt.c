@@ -6,9 +6,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#if defined(FSL_FEATURE_SOC_PORT_COUNT) && (FSL_FEATURE_SOC_PORT_COUNT)
 #include "fsl_port.h"
-#endif
 #include "fsl_gpio.h"
 #include "fsl_common.h"
 #include "app.h"

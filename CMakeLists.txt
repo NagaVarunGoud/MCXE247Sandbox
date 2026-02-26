@@ -118,6 +118,7 @@ set(VENDOR_SOURCES
     ${NXP_DRIVERS_DIR}/fsl_clock.c
     ${NXP_DRIVERS_DIR}/fsl_common.c
     ${NXP_DRIVERS_DIR}/fsl_gpio.c
+    ${NXP_DRIVERS_DIR}
 )
 
 foreach(vsrc IN LISTS VENDOR_SOURCES)

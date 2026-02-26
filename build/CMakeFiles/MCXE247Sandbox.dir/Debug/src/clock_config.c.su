@@ -1,0 +1,9 @@
+./src/clock_config.c:62:13:CLOCK_CONFIG_SetRtcClock	4	static
+./src/clock_config.c:82:13:CLOCK_CONFIG_FircSafeConfig	32	static
+./src/clock_config.c:205:6:BOARD_BootClockRUN_InitClockModule	16	static
+./src/clock_config.c:254:6:BOARD_BootClockRUN	8	static
+./src/clock_config.c:120:6:BOARD_InitBootClocks	8	static
+./src/clock_config.c:322:6:BOARD_BootClockVLPR_InitClockModule	16	static
+./src/clock_config.c:363:6:BOARD_BootClockVLPR	8	static
+./src/clock_config.c:475:6:BOARD_BootClockHSRUN_InitClockModule	16	static
+./src/clock_config.c:534:6:BOARD_BootClockHSRUN	8	static

@@ -1,0 +1,101 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: Configure (Ninja Multi-Config)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--fresh",
+        "-S",
+        "${workspaceFolder}",
+        "-B",
+        "${workspaceFolder}/build",
+        "-G",
+        "Ninja Multi-Config"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: Build Debug",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "${workspaceFolder}/build",
+        "--config",
+        "Debug",
+        "--parallel"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "CMake: Configure (Ninja Multi-Config)",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "CMake: Build Release",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "${workspaceFolder}/build",
+        "--config",
+        "Release",
+        "--parallel"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "CMake: Configure (Ninja Multi-Config)",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Flash: Debug (local_flash.sh)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "env -u VSCODE_PID -u VSCODE_TASK_NAME -u TERM_PROGRAM /home/hbl/Desktop/CbtcGitRepos_test/Scripts/Analysis/local_flash.sh Debug --no-debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flash: Release (local_flash.sh)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "env -u VSCODE_PID -u VSCODE_TASK_NAME -u TERM_PROGRAM /home/hbl/Desktop/CbtcGitRepos_test/Scripts/Analysis/local_flash.sh Release --no-debug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Debug: Stop LinkServer GDB Server",
+      "type": "shell",
+      "command": "pkill",
+      "args": [
+        "-f",
+        "LinkServer.*gdbserver"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

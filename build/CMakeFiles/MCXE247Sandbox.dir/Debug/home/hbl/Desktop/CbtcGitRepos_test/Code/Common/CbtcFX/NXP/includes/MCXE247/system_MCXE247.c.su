@@ -1,0 +1,4 @@
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/system_MCXE247.h:102:6:SystemCoreClockUpdate	4	static
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/system_MCXE247.h:114:6:SystemInitHook	4	static
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/system_MCXE247.h:93:6:SystemInit	8	static
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/includes/MCXE247/system_MCXE247.h:125:5:__low_level_init	4	static

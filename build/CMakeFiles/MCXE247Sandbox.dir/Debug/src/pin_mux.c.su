@@ -1,0 +1,10 @@
+/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h:584:20:CLOCK_EnableClock	8	static
+./src/pin_mux.c:68:6:BOARD_InitPins	4	static
+./src/pin_mux.c:90:6:BOARD_InitDEBUG_UARTPins	8	static
+./src/pin_mux.c:46:6:BOARD_InitBootPins	8	static
+./src/pin_mux.c:123:6:BOARD_InitLEDsPins	8	static
+./src/pin_mux.c:158:6:BOARD_InitBUTTONsPins	8	static
+./src/pin_mux.c:203:6:BOARD_InitSPIPins	8	static
+./src/pin_mux.c:301:6:BOARD_InitCANPins	8	static
+./src/pin_mux.c:341:6:BOARD_InitFlashPins	8	static
+./src/pin_mux.c:478:6:BOARD_InitENETPins	16	static

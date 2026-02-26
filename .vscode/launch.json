@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MCXE247: Flash + Debug (Debug)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/${workspaceFolderBasename}.elf",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/local/arm-gnu-toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gdb",
+      "miDebuggerServerAddress": "127.0.0.1:2330",
+      "preLaunchTask": "Flash: Debug (local_flash.sh)",
+      "postDebugTask": "Debug: Stop LinkServer GDB Server",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "setupCommands": [
+        {
+          "description": "Reset target before loading symbols",
+          "text": "monitor reset",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Load ELF to target memory",
+          "text": "load",
+          "ignoreFailures": false
+        },
+        {
+          "description": "Break at main",
+          "text": "tbreak main",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "MCXE247: Attach Existing GDB Server",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/${workspaceFolderBasename}.elf",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/local/arm-gnu-toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gdb",
+      "miDebuggerServerAddress": "127.0.0.1:2330",
+      "externalConsole": false,
+      "stopAtEntry": false
+    }
+  ]
+}

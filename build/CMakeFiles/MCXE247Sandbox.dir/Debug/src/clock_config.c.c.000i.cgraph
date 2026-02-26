@@ -1,0 +1,3763 @@
+Trivially needed symbols: BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN_InitClockModule/248 g_scgSysPllConfig_BOARD_BootClockHSRUN/247 g_scgFircConfig_BOARD_BootClockHSRUN/246 g_scgSircConfig_BOARD_BootClockHSRUN/245 g_scgSysOscConfig_BOARD_BootClockHSRUN/244 g_sysClkConfig_BOARD_BootClockHSRUN/243 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR_InitClockModule/241 g_scgSircConfig_BOARD_BootClockVLPR/240 g_sysClkConfig_BOARD_BootClockVLPR/239 BOARD_BootClockRUN/238 BOARD_BootClockRUN_InitClockModule/237 g_scgFircConfig_BOARD_BootClockRUN/236 g_scgSircConfig_BOARD_BootClockRUN/235 g_scgSysOscConfig_BOARD_BootClockRUN/234 g_sysClkConfig_BOARD_BootClockRUN/233 BOARD_InitBootClocks/232
+
+
+Initial Symbol table:
+
+__func__/266 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12bde580
+  References: 
+  Referring: CLOCK_SetHsrunModeSysClkConfig/196 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12bbc770
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+__func__/262 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12bde080
+  References: 
+  Referring: CLOCK_SetVlprModeSysClkConfig/194 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12bbc550
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN/238 (write) BOARD_BootClockVLPR/242 (write) BOARD_BootClockHSRUN/249 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__/258 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12b40bb0
+  References: 
+  Referring: CLOCK_GetCurSysClkConfig/197 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/257 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12b40aa0
+  References: 
+  Referring: CLOCK_SetRunModeSysClkConfig/195 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12b40880
+  References: 
+  Referring: CLOCK_CONFIG_FircSafeConfig/231 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: CLOCK_SetXtal0Freq/213 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  Aux: @0x78ce12bbc330
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_SetHsrunModeSysClkConfig/196 BOARD_BootClockHSRUN_InitClockModule/248 CLOCK_SetVlprModeSysClkConfig/194 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x2488140
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc770
+  References: g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (addr) g_scgFircConfig_BOARD_BootClockHSRUN/246 (addr) g_scgSircConfig_BOARD_BootClockHSRUN/245 (addr) g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (addr) g_sysClkConfig_BOARD_BootClockHSRUN/243 (addr) __func__/265 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetHsrunModeSysClkConfig/196 CLOCK_InitSysPll/264 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeHsrun/263 SMC_SetPowerModeProtection/228 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc660
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1b00
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1a80
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1a00
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1980
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1900
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc550
+  References: g_scgSircConfig_BOARD_BootClockVLPR/240 (addr) g_sysClkConfig_BOARD_BootClockVLPR/239 (addr) __func__/261 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_GetCurSysClkConfig/197 CLOCK_SetVlprModeSysClkConfig/194 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeVlpr/260 SMC_SetPowerModeProtection/228 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc440
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1100
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bc1080
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_InitBootClocks/232 
+  Calls: BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc330
+  References: g_scgSysOscConfig_BOARD_BootClockRUN/234 (addr) g_scgFircConfig_BOARD_BootClockRUN/236 (addr) g_scgSircConfig_BOARD_BootClockRUN/235 (addr) g_sysClkConfig_BOARD_BootClockRUN/233 (addr) __func__/253 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12bbc220
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12ba9880
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12ba9800
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12ba9780
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0x78ce12ba9700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockRUN/238 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b40880
+  References: *.LC0/255 (read) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitFirc/256 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12bcc780
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+SMC_GetPowerModeState/229 (SMC_GetPowerModeState)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b40770
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SMC_SetPowerModeProtection/228 (SMC_SetPowerModeProtection)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b92dd0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SMC_GetVersionId/227 (SMC_GetVersionId)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalTestAndSet4Byte/226 (_SDK_AtomicLocalTestAndSet4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalTestAndSet2Byte/225 (_SDK_AtomicLocalTestAndSet2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalTestAndSet1Byte/224 (_SDK_AtomicLocalTestAndSet1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalCompareAndSet4Byte/223 (_SDK_AtomicLocalCompareAndSet4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalCompareAndSet2Byte/222 (_SDK_AtomicLocalCompareAndSet2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalCompareAndSet1Byte/221 (_SDK_AtomicLocalCompareAndSet1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+EnableGlobalIRQ/220 (EnableGlobalIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DisableGlobalIRQ/219 (DisableGlobalIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+IRQ_ClearPendingIRQ/218 (IRQ_ClearPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+IRQ_SetPriority/217 (IRQ_SetPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+EnableIRQWithPriority/216 (EnableIRQWithPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DisableIRQ/215 (DisableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+EnableIRQ/214 (EnableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetXtal0Freq/213 (CLOCK_SetXtal0Freq)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12bbc000
+  References: g_xtal0Freq/254 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_IsSysPllValid/212 (CLOCK_IsSysPllValid)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetSysPllMonitorMode/211 (CLOCK_SetSysPllMonitorMode)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_ClearSysPllErr/210 (CLOCK_ClearSysPllErr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_IsSysPllErr/209 (CLOCK_IsSysPllErr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetSysPllAsyncClkDiv/208 (CLOCK_SetSysPllAsyncClkDiv)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_IsFircValid/207 (CLOCK_IsFircValid)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetFircAsyncClkDiv/206 (CLOCK_SetFircAsyncClkDiv)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_IsSircValid/205 (CLOCK_IsSircValid)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetSircAsyncClkDiv/204 (CLOCK_SetSircAsyncClkDiv)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_IsSysOscValid/203 (CLOCK_IsSysOscValid)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetSysOscMonitorMode/202 (CLOCK_SetSysOscMonitorMode)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_ClearSysOscErr/201 (CLOCK_ClearSysOscErr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_IsSysOscErr/200 (CLOCK_IsSysOscErr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetSysOscAsyncClkDiv/199 (CLOCK_SetSysOscAsyncClkDiv)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetClkOutSel/198 (CLOCK_SetClkOutSel)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b92ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_GetCurSysClkConfig/197 (CLOCK_GetCurSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b40bb0
+  References: __func__/258 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetHsrunModeSysClkConfig/196 (CLOCK_SetHsrunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12bde580
+  References: __func__/266 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: __assert_func/252 
+CLOCK_SetRunModeSysClkConfig/195 (CLOCK_SetRunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12b40aa0
+  References: __func__/257 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetVlprModeSysClkConfig/194 (CLOCK_SetVlprModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0x78ce12bde080
+  References: __func__/262 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: __assert_func/252 
+CLOCK_SetIpSrcDiv/193 (CLOCK_SetIpSrcDiv)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_SetIpSrc/192 (CLOCK_SetIpSrc)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_DisableClock/191 (CLOCK_DisableClock)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_EnableClock/190 (CLOCK_EnableClock)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClearAndSet4Byte/189 (_SDK_AtomicLocalClearAndSet4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClearAndSet2Byte/188 (_SDK_AtomicLocalClearAndSet2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClearAndSet1Byte/187 (_SDK_AtomicLocalClearAndSet1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalToggle4Byte/186 (_SDK_AtomicLocalToggle4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalToggle2Byte/185 (_SDK_AtomicLocalToggle2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalToggle1Byte/184 (_SDK_AtomicLocalToggle1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClear4Byte/183 (_SDK_AtomicLocalClear4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClear2Byte/182 (_SDK_AtomicLocalClear2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalClear1Byte/181 (_SDK_AtomicLocalClear1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSet4Byte/180 (_SDK_AtomicLocalSet4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSet2Byte/179 (_SDK_AtomicLocalSet2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSet1Byte/178 (_SDK_AtomicLocalSet1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSub4Byte/177 (_SDK_AtomicLocalSub4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSub2Byte/176 (_SDK_AtomicLocalSub2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalSub1Byte/175 (_SDK_AtomicLocalSub1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalAdd4Byte/174 (_SDK_AtomicLocalAdd4Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalAdd2Byte/173 (_SDK_AtomicLocalAdd2Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_SDK_AtomicLocalAdd1Byte/172 (_SDK_AtomicLocalAdd1Byte)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/171 (ITM_CheckChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/170 (ITM_ReceiveChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/169 (ITM_SendChar)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/168 (SysTick_Config)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/167 (SCB_GetFPUType)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/166 (__NVIC_SystemReset)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/165 (__NVIC_GetVector)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/164 (__NVIC_SetVector)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/163 (NVIC_DecodePriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/162 (NVIC_EncodePriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/161 (__NVIC_GetPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/160 (__NVIC_SetPriority)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/159 (__NVIC_GetActive)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/158 (__NVIC_ClearPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/157 (__NVIC_SetPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/156 (__NVIC_GetPendingIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/155 (__NVIC_DisableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/154 (__NVIC_GetEnableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/153 (__NVIC_EnableIRQ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/152 (__NVIC_GetPriorityGrouping)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/151 (__NVIC_SetPriorityGrouping)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/150 (__set_FAULTMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/149 (__get_FAULTMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/148 (__set_BASEPRI_MAX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/147 (__set_BASEPRI)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/146 (__get_BASEPRI)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/145 (__set_PRIMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/144 (__get_PRIMASK)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/143 (__set_MSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/142 (__get_MSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/141 (__set_PSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/140 (__get_PSP)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/139 (__get_xPSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/138 (__get_APSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/137 (__get_IPSR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/136 (__set_CONTROL)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/135 (__get_CONTROL)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/134 (__cmsis_start)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/133 (__SMMLA)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/132 (__SXTAB16_RORn)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/131 (__SXTB16_RORn)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/130 (__set_FPSCR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/129 (__get_FPSCR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/128 (__disable_fault_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/127 (__enable_fault_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/126 (__disable_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/125 (__enable_irq)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/124 (__STRT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/123 (__STRHT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/122 (__STRBT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/121 (__LDRT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/120 (__LDRHT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/119 (__LDRBT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/118 (__RRX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/117 (__STREXW)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/116 (__LDREXW)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/115 (__STREXH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/114 (__LDREXH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/113 (__STREXB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/112 (__LDREXB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/111 (__CLREX)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/110 (__CLZ)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/109 (__RBIT)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/108 (__ROR)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/107 (__REVSH)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/106 (__REV16)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/105 (__REV)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/104 (__DMB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/103 (__DSB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/102 (__ISB)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlawt/101 (__smlawt)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlawb/100 (__smlawb)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlatt/99 (__smlatt)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlabt/98 (__smlabt)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlatb/97 (__smlatb)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlabb/96 (__smlabb)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qdbl/95 (__qdbl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qsub/94 (__qsub)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qadd/93 (__qadd)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ignore_saturation/92 (__ignore_saturation)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smuadx/91 (__smuadx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smuad/90 (__smuad)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlsdx/89 (__smlsdx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlsd/88 (__smlsd)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smladx/87 (__smladx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlad/86 (__smlad)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__usub16/85 (__usub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__usax/84 (__usax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uasx/83 (__uasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uadd16/82 (__uadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ssub16/81 (__ssub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ssax/80 (__ssax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sasx/79 (__sasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sadd16/78 (__sadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__usub8/77 (__usub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uadd8/76 (__uadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ssub8/75 (__ssub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sadd8/74 (__sadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sel/73 (__sel)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlsldx/72 (__smlsldx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlsld/71 (__smlsld)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlaldx/70 (__smlaldx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smlald/69 (__smlald)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__usada8/68 (__usada8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__usad8/67 (__usad8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smusdx/66 (__smusdx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__smusd/65 (__smusd)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqsub16/64 (__uqsub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqsax/63 (__uqsax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqasx/62 (__uqasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqadd16/61 (__uqadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhsub16/60 (__uhsub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhsax/59 (__uhsax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhasx/58 (__uhasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhadd16/57 (__uhadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shsub16/56 (__shsub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shsax/55 (__shsax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shasx/54 (__shasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shadd16/53 (__shadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qsub16/52 (__qsub16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qsax/51 (__qsax)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qasx/50 (__qasx)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qadd16/49 (__qadd16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqsub8/48 (__uqsub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uqadd8/47 (__uqadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhsub8/46 (__uhsub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uhadd8/45 (__uhadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shsub8/44 (__shsub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__shadd8/43 (__shadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qsub8/42 (__qsub8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__qadd8/41 (__qadd8)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uxtb16/40 (__uxtb16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__uxtab16/39 (__uxtab16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sxtb16/38 (__sxtb16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sxtab16/37 (__sxtab16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mrrc2/36 (__arm_mrrc2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mcrr2/35 (__arm_mcrr2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mrrc/34 (__arm_mrrc)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mcrr/33 (__arm_mcrr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mrc2/32 (__arm_mrc2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mcr2/31 (__arm_mcr2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_stc2l/30 (__arm_stc2l)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_stc2/29 (__arm_stc2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_ldc2l/28 (__arm_ldc2l)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_ldc2/27 (__arm_ldc2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_cdp2/26 (__arm_cdp2)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mrc/25 (__arm_mrc)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_mcr/24 (__arm_mcr)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_stcl/23 (__arm_stcl)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_stc/22 (__arm_stc)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_ldcl/21 (__arm_ldcl)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_ldc/20 (__arm_ldc)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__arm_cdp/19 (__arm_cdp)
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rbitll/18 (__rbitll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rbitl/17 (__rbitl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rbit/16 (__rbit)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rev16ll/15 (__rev16ll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rev16l/14 (__rev16l)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rev16/13 (__rev16)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__revll/12 (__revll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__revl/11 (__revl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rev/10 (__rev)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__revsh/9 (__revsh)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__clsll/8 (__clsll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__clsl/7 (__clsl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cls/6 (__cls)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__clzll/5 (__clzll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__clzl/4 (__clzl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__clz/3 (__clz)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rorll/2 (__rorll)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__rorl/1 (__rorl)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ror/0 (__ror)
+  Type: function definition
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: SMC_GetVersionId/227 _SDK_AtomicLocalTestAndSet4Byte/226 _SDK_AtomicLocalTestAndSet2Byte/225 _SDK_AtomicLocalTestAndSet1Byte/224 _SDK_AtomicLocalCompareAndSet4Byte/223 _SDK_AtomicLocalCompareAndSet2Byte/222 _SDK_AtomicLocalCompareAndSet1Byte/221 EnableGlobalIRQ/220 DisableGlobalIRQ/219 IRQ_ClearPendingIRQ/218 IRQ_SetPriority/217 EnableIRQWithPriority/216 DisableIRQ/215 EnableIRQ/214 CLOCK_IsSysPllValid/212 CLOCK_SetSysPllMonitorMode/211 CLOCK_ClearSysPllErr/210 CLOCK_IsSysPllErr/209 CLOCK_SetSysPllAsyncClkDiv/208 CLOCK_IsFircValid/207 CLOCK_SetFircAsyncClkDiv/206 CLOCK_IsSircValid/205 CLOCK_SetSircAsyncClkDiv/204 CLOCK_IsSysOscValid/203 CLOCK_SetSysOscMonitorMode/202 CLOCK_ClearSysOscErr/201 CLOCK_IsSysOscErr/200 CLOCK_SetSysOscAsyncClkDiv/199 CLOCK_SetIpSrcDiv/193 CLOCK_SetIpSrc/192 CLOCK_DisableClock/191 CLOCK_EnableClock/190 _SDK_AtomicLocalClearAndSet4Byte/189 _SDK_AtomicLocalClearAndSet2Byte/188 _SDK_AtomicLocalClearAndSet1Byte/187 _SDK_AtomicLocalToggle4Byte/186 _SDK_AtomicLocalToggle2Byte/185 _SDK_AtomicLocalToggle1Byte/184 _SDK_AtomicLocalClear4Byte/183 _SDK_AtomicLocalClear2Byte/182 _SDK_AtomicLocalClear1Byte/181 _SDK_AtomicLocalSet4Byte/180 _SDK_AtomicLocalSet2Byte/179 _SDK_AtomicLocalSet1Byte/178 _SDK_AtomicLocalSub4Byte/177 _SDK_AtomicLocalSub2Byte/176 _SDK_AtomicLocalSub1Byte/175 _SDK_AtomicLocalAdd4Byte/174 _SDK_AtomicLocalAdd2Byte/173 _SDK_AtomicLocalAdd1Byte/172 ITM_CheckChar/171 ITM_ReceiveChar/170 ITM_SendChar/169 SysTick_Config/168 SCB_GetFPUType/167 __NVIC_SystemReset/166 __NVIC_GetVector/165 __NVIC_SetVector/164 NVIC_DecodePriority/163 NVIC_EncodePriority/162 __NVIC_GetPriority/161 __NVIC_SetPriority/160 __NVIC_GetActive/159 __NVIC_ClearPendingIRQ/158 __NVIC_SetPendingIRQ/157 __NVIC_GetPendingIRQ/156 __NVIC_DisableIRQ/155 __NVIC_GetEnableIRQ/154 __NVIC_EnableIRQ/153 __NVIC_GetPriorityGrouping/152 __NVIC_SetPriorityGrouping/151 __set_FAULTMASK/150 __get_FAULTMASK/149 __set_BASEPRI_MAX/148 __set_BASEPRI/147 __get_BASEPRI/146 __set_PRIMASK/145 __get_PRIMASK/144 __set_MSP/143 __get_MSP/142 __set_PSP/141 __get_PSP/140 __get_xPSR/139 __get_APSR/138 __get_IPSR/137 __set_CONTROL/136 __get_CONTROL/135 __cmsis_start/134 __SMMLA/133 __SXTAB16_RORn/132 __SXTB16_RORn/131 __set_FPSCR/130 __get_FPSCR/129 __disable_fault_irq/128 __enable_fault_irq/127 __disable_irq/126 __enable_irq/125 __STRT/124 __STRHT/123 __STRBT/122 __LDRT/121 __LDRHT/120 __LDRBT/119 __RRX/118 __STREXW/117 __LDREXW/116 __STREXH/115 __LDREXH/114 __STREXB/113 __LDREXB/112 __CLREX/111 __CLZ/110 __RBIT/109 __ROR/108 __REVSH/107 __REV16/106 __REV/105 __DMB/104 __DSB/103 __ISB/102 __smlawt/101 __smlawb/100 __smlatt/99 __smlabt/98 __smlatb/97 __smlabb/96 __qdbl/95 __qsub/94 __qadd/93 __ignore_saturation/92 __smuadx/91 __smuad/90 __smlsdx/89 __smlsd/88 __smladx/87 __smlad/86 __usub16/85 __usax/84 __uasx/83 __uadd16/82 __ssub16/81 __ssax/80 __sasx/79 __sadd16/78 __usub8/77 __uadd8/76 __ssub8/75 __sadd8/74 __sel/73 __smlsldx/72 __smlsld/71 __smlaldx/70 __smlald/69 __usada8/68 __usad8/67 __smusdx/66 __smusd/65 __uqsub16/64 __uqsax/63 __uqasx/62 __uqadd16/61 __uhsub16/60 __uhsax/59 __uhasx/58 __uhadd16/57 __shsub16/56 __shsax/55 __shasx/54 __shadd16/53 __qsub16/52 __qsax/51 __qasx/50 __qadd16/49 __uqsub8/48 __uqadd8/47 __uhsub8/46 __uhadd8/45 __shsub8/44 __shadd8/43 __qsub8/42 __qadd8/41 __uxtb16/40 __uxtab16/39 __sxtb16/38 __sxtab16/37 __arm_mrrc2/36 __arm_mcrr2/35 __arm_mrrc/34 __arm_mcrr/33 __arm_mrc2/32 __arm_mcr2/31 __arm_stc2l/30 __arm_stc2/29 __arm_ldc2l/28 __arm_ldc2/27 __arm_cdp2/26 __arm_mrc/25 __arm_mcr/24 __arm_stcl/23 __arm_stc/22 __arm_ldcl/21 __arm_ldc/20 __arm_cdp/19 __rbitll/18 __rbitl/17 __rbit/16 __rev16ll/15 __rev16l/14 __rev16/13 __revll/12 __revl/11 __rev/10 __revsh/9 __clsll/8 __clsl/7 __cls/6 __clzll/5 __clzl/4 __clz/3 __rorll/2 __rorl/1 __ror/0
+
+Reclaimed Symbol table:
+
+__func__/266 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetHsrunModeSysClkConfig/196 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+__func__/262 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetVlprModeSysClkConfig/194 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN/238 (write) BOARD_BootClockVLPR/242 (write) BOARD_BootClockHSRUN/249 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__/258 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_GetCurSysClkConfig/197 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__/257 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetRunModeSysClkConfig/195 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_CONFIG_FircSafeConfig/231 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: CLOCK_SetXtal0Freq/213 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_SetHsrunModeSysClkConfig/196 BOARD_BootClockHSRUN_InitClockModule/248 CLOCK_SetVlprModeSysClkConfig/194 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (addr) g_scgFircConfig_BOARD_BootClockHSRUN/246 (addr) g_scgSircConfig_BOARD_BootClockHSRUN/245 (addr) g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (addr) g_sysClkConfig_BOARD_BootClockHSRUN/243 (addr) __func__/265 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetHsrunModeSysClkConfig/196 CLOCK_InitSysPll/264 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeHsrun/263 SMC_SetPowerModeProtection/228 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSircConfig_BOARD_BootClockVLPR/240 (addr) g_sysClkConfig_BOARD_BootClockVLPR/239 (addr) __func__/261 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_GetCurSysClkConfig/197 CLOCK_SetVlprModeSysClkConfig/194 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeVlpr/260 SMC_SetPowerModeProtection/228 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_InitBootClocks/232 
+  Calls: BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockRUN/234 (addr) g_scgFircConfig_BOARD_BootClockRUN/236 (addr) g_scgSircConfig_BOARD_BootClockRUN/235 (addr) g_sysClkConfig_BOARD_BootClockRUN/233 (addr) __func__/253 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockRUN/238 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: *.LC0/255 (read) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitFirc/256 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+SMC_GetPowerModeState/229 (SMC_GetPowerModeState)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SMC_SetPowerModeProtection/228 (SMC_SetPowerModeProtection)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+CLOCK_SetXtal0Freq/213 (CLOCK_SetXtal0Freq)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: g_xtal0Freq/254 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_SetClkOutSel/198 (CLOCK_SetClkOutSel)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_GetCurSysClkConfig/197 (CLOCK_GetCurSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__/258 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetHsrunModeSysClkConfig/196 (CLOCK_SetHsrunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__/266 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: __assert_func/252 
+CLOCK_SetRunModeSysClkConfig/195 (CLOCK_SetRunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__/257 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetVlprModeSysClkConfig/194 (CLOCK_SetVlprModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__/262 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: __assert_func/252 
+
+
+Initial Symbol table:
+
+__func__.0/266 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetHsrunModeSysClkConfig/196 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.1/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+__func__.2/262 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetVlprModeSysClkConfig/194 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.3/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN/238 (write) BOARD_BootClockVLPR/242 (write) BOARD_BootClockHSRUN/249 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__.4/258 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_GetCurSysClkConfig/197 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.5/257 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetRunModeSysClkConfig/195 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_CONFIG_FircSafeConfig/231 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: CLOCK_SetXtal0Freq/213 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__.6/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_SetHsrunModeSysClkConfig/196 BOARD_BootClockHSRUN_InitClockModule/248 CLOCK_SetVlprModeSysClkConfig/194 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (addr) g_scgFircConfig_BOARD_BootClockHSRUN/246 (addr) g_scgSircConfig_BOARD_BootClockHSRUN/245 (addr) g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (addr) g_sysClkConfig_BOARD_BootClockHSRUN/243 (addr) __func__.1/265 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetHsrunModeSysClkConfig/196 CLOCK_InitSysPll/264 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeHsrun/263 SMC_SetPowerModeProtection/228 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSircConfig_BOARD_BootClockVLPR/240 (addr) g_sysClkConfig_BOARD_BootClockVLPR/239 (addr) __func__.3/261 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_GetCurSysClkConfig/197 CLOCK_SetVlprModeSysClkConfig/194 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeVlpr/260 SMC_SetPowerModeProtection/228 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_InitBootClocks/232 
+  Calls: BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockRUN/234 (addr) g_scgFircConfig_BOARD_BootClockRUN/236 (addr) g_scgSircConfig_BOARD_BootClockRUN/235 (addr) g_sysClkConfig_BOARD_BootClockRUN/233 (addr) __func__.6/253 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockRUN/238 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: *.LC0/255 (read) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitFirc/256 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+SMC_GetPowerModeState/229 (SMC_GetPowerModeState)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SMC_SetPowerModeProtection/228 (SMC_SetPowerModeProtection)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+CLOCK_SetXtal0Freq/213 (CLOCK_SetXtal0Freq)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: g_xtal0Freq/254 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_SetClkOutSel/198 (CLOCK_SetClkOutSel)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_GetCurSysClkConfig/197 (CLOCK_GetCurSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.4/258 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetHsrunModeSysClkConfig/196 (CLOCK_SetHsrunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.0/266 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: __assert_func/252 
+CLOCK_SetRunModeSysClkConfig/195 (CLOCK_SetRunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.5/257 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetVlprModeSysClkConfig/194 (CLOCK_SetVlprModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.2/262 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: __assert_func/252 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+__func__.0/266 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetHsrunModeSysClkConfig/196 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.1/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: 
+__func__.2/262 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetVlprModeSysClkConfig/194 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.3/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN/238 (write) BOARD_BootClockVLPR/242 (write) BOARD_BootClockHSRUN/249 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__.4/258 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_GetCurSysClkConfig/197 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__func__.5/257 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_SetRunModeSysClkConfig/195 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: CLOCK_CONFIG_FircSafeConfig/231 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: CLOCK_SetXtal0Freq/213 (write) 
+  Availability: not-ready
+  Varpool flags:
+__func__.6/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CLOCK_SetHsrunModeSysClkConfig/196 BOARD_BootClockHSRUN_InitClockModule/248 CLOCK_SetVlprModeSysClkConfig/194 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockHSRUN_InitClockModule/248 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (addr) g_scgFircConfig_BOARD_BootClockHSRUN/246 (addr) g_scgSircConfig_BOARD_BootClockHSRUN/245 (addr) g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (addr) g_sysClkConfig_BOARD_BootClockHSRUN/243 (addr) __func__.1/265 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 BOARD_BootClockHSRUN/249 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetHsrunModeSysClkConfig/196 CLOCK_InitSysPll/264 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeHsrun/263 SMC_SetPowerModeProtection/228 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockVLPR_InitClockModule/241 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSircConfig_BOARD_BootClockVLPR/240 (addr) g_sysClkConfig_BOARD_BootClockVLPR/239 (addr) __func__.3/261 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 BOARD_BootClockVLPR/242 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_GetCurSysClkConfig/197 CLOCK_SetVlprModeSysClkConfig/194 CLOCK_InitSirc/251 SMC_GetPowerModeState/229 SMC_SetPowerModeVlpr/260 SMC_SetPowerModeProtection/228 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_InitBootClocks/232 
+  Calls: BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 BOARD_BootClockRUN_InitClockModule/237 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockRUN/234 (addr) g_scgFircConfig_BOARD_BootClockRUN/236 (addr) g_scgSircConfig_BOARD_BootClockRUN/235 (addr) g_sysClkConfig_BOARD_BootClockRUN/233 (addr) __func__.6/253 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 BOARD_BootClockRUN/238 
+  Calls: __assert_func/252 CLOCK_CONFIG_SetRtcClock/230 CLOCK_SetClkOutSel/198 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_SetXtal0Freq/213 CLOCK_InitSysOsc/250 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: BOARD_BootClockRUN/238 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: *.LC0/255 (read) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitFirc/256 CLOCK_GetCurSysClkConfig/197 CLOCK_SetRunModeSysClkConfig/195 CLOCK_InitSirc/251 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+SMC_GetPowerModeState/229 (SMC_GetPowerModeState)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+SMC_SetPowerModeProtection/228 (SMC_SetPowerModeProtection)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: 
+CLOCK_SetXtal0Freq/213 (CLOCK_SetXtal0Freq)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: g_xtal0Freq/254 (write) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_SetClkOutSel/198 (CLOCK_SetClkOutSel)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: 
+CLOCK_GetCurSysClkConfig/197 (CLOCK_GetCurSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.4/258 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 BOARD_BootClockVLPR_InitClockModule/241 CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetHsrunModeSysClkConfig/196 (CLOCK_SetHsrunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.0/266 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 
+  Calls: __assert_func/252 
+CLOCK_SetRunModeSysClkConfig/195 (CLOCK_SetRunModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.5/257 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 CLOCK_CONFIG_FircSafeConfig/231 BOARD_BootClockRUN_InitClockModule/237 
+  Calls: __assert_func/252 
+CLOCK_SetVlprModeSysClkConfig/194 (CLOCK_SetVlprModeSysClkConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: __func__.2/262 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 
+  Calls: __assert_func/252 
+updating call of CLOCK_CONFIG_FircSafeConfig/231 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 778, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of CLOCK_CONFIG_FircSafeConfig/231 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 818, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of CLOCK_CONFIG_FircSafeConfig/231 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 778, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of CLOCK_CONFIG_FircSafeConfig/231 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 818, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockRUN_InitClockModule/237 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 778, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockRUN_InitClockModule/237 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 818, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockVLPR_InitClockModule/241 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 758, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockVLPR_InitClockModule/241 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 818, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockHSRUN_InitClockModule/248 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 798, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+updating call of BOARD_BootClockHSRUN_InitClockModule/248 -> __builtin_unreachable trap/268: __assert_func ("/home/hbl/Desktop/CbtcGitRepos_test/Code/Common/CbtcFX/NXP/drivers/MCXE247/fsl_clock.h", 818, &__func__, "config");
+  updated to:__builtin_unreachable trap ();
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+__func__.1/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) 
+  Calls: 
+__func__.3/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockVLPR_InitClockModule/241 (118111600 (estimated locally),0.20 per call) 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN/238 (write) BOARD_BootClockVLPR/242 (write) BOARD_BootClockHSRUN/249 (write) 
+  Availability: not_available
+  Varpool flags:
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CLOCK_CONFIG_FircSafeConfig/231 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: CLOCK_CONFIG_FircSafeConfig/231 (read) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (write) BOARD_BootClockHSRUN_InitClockModule/248 (write) 
+  Availability: not_available
+  Varpool flags:
+__func__.6/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (531761 (estimated locally),0.00 per call) BOARD_BootClockVLPR_InitClockModule/241 (295423 (estimated locally),0.00 per call) BOARD_BootClockRUN_InitClockModule/237 (472677 (estimated locally),0.00 per call) 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) BOARD_BootClockVLPR_InitClockModule/241 (118111600 (estimated locally),0.20 per call) BOARD_BootClockRUN_InitClockModule/237 (118111600 (estimated locally),0.12 per call) CLOCK_CONFIG_FircSafeConfig/231 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) BOARD_BootClockRUN_InitClockModule/237 (118111600 (estimated locally),0.12 per call) 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN_InitClockModule/248 (1073741824 (estimated locally),1.00 per call) 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (addr) g_xtal0Freq/254 (write) g_scgFircConfig_BOARD_BootClockHSRUN/246 (addr) g_scgSircConfig_BOARD_BootClockHSRUN/245 (addr) g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (addr) g_sysClkConfig_BOARD_BootClockHSRUN/243 (addr) __func__.1/265 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:1063536193 (estimated locally) body
+  Called by: BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockHSRUN/249 (1073741824 (estimated locally),1.00 per call) 
+  Calls: __assert_func/252 (531761 (estimated locally),0.00 per call) CLOCK_CONFIG_SetRtcClock/230 (118111600 (estimated locally),0.11 per call) CLOCK_InitSysPll/264 (118111600 (estimated locally),0.11 per call) CLOCK_InitSirc/251 (118111600 (estimated locally),0.11 per call) SMC_SetPowerModeHsrun/263 (118111600 (estimated locally),0.11 per call) CLOCK_CONFIG_FircSafeConfig/231 (118111600 (estimated locally),0.11 per call) CLOCK_InitSysOsc/250 (118111600 (estimated locally),0.11 per call) 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockHSRUN_InitClockModule/248 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: BOARD_BootClockVLPR_InitClockModule/241 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR_InitClockModule/241 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR_InitClockModule/241 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR_InitClockModule/241 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR_InitClockModule/241 (1073741824 (estimated locally),1.00 per call) 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_scgSircConfig_BOARD_BootClockVLPR/240 (addr) g_sysClkConfig_BOARD_BootClockVLPR/239 (addr) __func__.3/261 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:590853423 (estimated locally) body
+  Called by: BOARD_BootClockVLPR/242 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR/242 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR/242 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR/242 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockVLPR/242 (1073741824 (estimated locally),1.00 per call) 
+  Calls: __assert_func/252 (295423 (estimated locally),0.00 per call) CLOCK_CONFIG_SetRtcClock/230 (118111600 (estimated locally),0.20 per call) CLOCK_InitSirc/251 (118111600 (estimated locally),0.20 per call) SMC_SetPowerModeVlpr/260 (118111600 (estimated locally),0.20 per call) 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockVLPR_InitClockModule/241 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: SystemCoreClock/259 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: BOARD_InitBootClocks/232 (1073741824 (estimated locally),1.00 per call) 
+  Calls: BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN_InitClockModule/237 (1073741824 (estimated locally),1.00 per call) 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_scgSysOscConfig_BOARD_BootClockRUN/234 (addr) g_xtal0Freq/254 (write) g_scgFircConfig_BOARD_BootClockRUN/236 (addr) g_scgSircConfig_BOARD_BootClockRUN/235 (addr) g_sysClkConfig_BOARD_BootClockRUN/233 (addr) __func__.6/253 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:945365448 (estimated locally) body
+  Called by: BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) 
+  Calls: __assert_func/252 (472677 (estimated locally),0.00 per call) CLOCK_CONFIG_SetRtcClock/230 (118111600 (estimated locally),0.12 per call) CLOCK_InitSirc/251 (118111600 (estimated locally),0.12 per call) CLOCK_CONFIG_FircSafeConfig/231 (118111600 (estimated locally),0.12 per call) CLOCK_InitSysOsc/250 (118111600 (estimated locally),0.12 per call) 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: BOARD_BootClockRUN_InitClockModule/237 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: BOARD_BootClockRUN/238 (1073741824 (estimated locally),1.00 per call) 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: *.LC0/255 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) BOARD_BootClockRUN_InitClockModule/237 (118111600 (estimated locally),0.12 per call) 
+  Calls: CLOCK_InitFirc/256 (118111600 (estimated locally),1.00 per call) CLOCK_InitSirc/251 (118111600 (estimated locally),1.00 per call) 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn
+  Called by: BOARD_BootClockHSRUN_InitClockModule/248 (118111600 (estimated locally),0.11 per call) BOARD_BootClockVLPR_InitClockModule/241 (118111600 (estimated locally),0.20 per call) BOARD_BootClockRUN_InitClockModule/237 (118111600 (estimated locally),0.12 per call) 
+  Calls: 
+Trivially needed variables: __func__.1/265 __func__.3/261 *.LC0/255 __func__.6/253 g_scgSysPllConfig_BOARD_BootClockHSRUN/247 g_scgFircConfig_BOARD_BootClockHSRUN/246 g_scgSircConfig_BOARD_BootClockHSRUN/245 g_scgSysOscConfig_BOARD_BootClockHSRUN/244 g_sysClkConfig_BOARD_BootClockHSRUN/243 g_scgSircConfig_BOARD_BootClockVLPR/240 g_sysClkConfig_BOARD_BootClockVLPR/239 g_scgFircConfig_BOARD_BootClockRUN/236 g_scgSircConfig_BOARD_BootClockRUN/235 g_scgSysOscConfig_BOARD_BootClockRUN/234 g_sysClkConfig_BOARD_BootClockRUN/233
+Removing variables:
+
+Final Symbol table:
+
+__func__.1/265 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.__func__.1 (implicit_section) artificial
+  Aux: @0x1
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+CLOCK_InitSysPll/264 (CLOCK_InitSysPll)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SMC_SetPowerModeHsrun/263 (SMC_SetPowerModeHsrun)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__func__.3/261 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.__func__.3 (implicit_section) artificial
+  Aux: @0x78ce12bde580
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+SMC_SetPowerModeVlpr/260 (SMC_SetPowerModeVlpr)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemCoreClock/259 (SystemCoreClock)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CLOCK_InitFirc/256 (CLOCK_InitFirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+*.LC0/255 (*.LC0)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written artificial
+  Aux: @0x78ce12bde080
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+g_xtal0Freq/254 (g_xtal0Freq)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__func__.6/253 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.__func__.6 (implicit_section) artificial
+  Aux: @0x78ce12bcc980
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+__assert_func/252 (__assert_func)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_InitSirc/251 (CLOCK_InitSirc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CLOCK_InitSysOsc/250 (CLOCK_InitSysOsc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+BOARD_BootClockHSRUN/249 (BOARD_BootClockHSRUN)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockHSRUN (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+BOARD_BootClockHSRUN_InitClockModule/248 (BOARD_BootClockHSRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockHSRUN_InitClockModule (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1063536193 (estimated locally)
+  Called by: 
+  Calls: 
+g_scgSysPllConfig_BOARD_BootClockHSRUN/247 (g_scgSysPllConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSysPllConfig_BOARD_BootClockHSRUN (implicit_section)
+  Aux: @0x78ce12bcc780
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgFircConfig_BOARD_BootClockHSRUN/246 (g_scgFircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgFircConfig_BOARD_BootClockHSRUN (implicit_section)
+  Aux: @0x78ce12bc1b00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockHSRUN/245 (g_scgSircConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSircConfig_BOARD_BootClockHSRUN (implicit_section)
+  Aux: @0x78ce12bc1a80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockHSRUN/244 (g_scgSysOscConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSysOscConfig_BOARD_BootClockHSRUN (implicit_section)
+  Aux: @0x78ce12bc1a00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockHSRUN/243 (g_sysClkConfig_BOARD_BootClockHSRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_sysClkConfig_BOARD_BootClockHSRUN (implicit_section)
+  Aux: @0x78ce12bc1980
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockVLPR/242 (BOARD_BootClockVLPR)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockVLPR (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+BOARD_BootClockVLPR_InitClockModule/241 (BOARD_BootClockVLPR_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockVLPR_InitClockModule (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:590853423 (estimated locally)
+  Called by: 
+  Calls: 
+g_scgSircConfig_BOARD_BootClockVLPR/240 (g_scgSircConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSircConfig_BOARD_BootClockVLPR (implicit_section)
+  Aux: @0x78ce12bc1900
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockVLPR/239 (g_sysClkConfig_BOARD_BootClockVLPR)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_sysClkConfig_BOARD_BootClockVLPR (implicit_section)
+  Aux: @0x78ce12bc1100
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_BootClockRUN/238 (BOARD_BootClockRUN)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockRUN (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+BOARD_BootClockRUN_InitClockModule/237 (BOARD_BootClockRUN_InitClockModule)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_BootClockRUN_InitClockModule (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:945365448 (estimated locally)
+  Called by: 
+  Calls: 
+g_scgFircConfig_BOARD_BootClockRUN/236 (g_scgFircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgFircConfig_BOARD_BootClockRUN (implicit_section)
+  Aux: @0x78ce12bc1080
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSircConfig_BOARD_BootClockRUN/235 (g_scgSircConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSircConfig_BOARD_BootClockRUN (implicit_section)
+  Aux: @0x78ce12ba9880
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_scgSysOscConfig_BOARD_BootClockRUN/234 (g_scgSysOscConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_scgSysOscConfig_BOARD_BootClockRUN (implicit_section)
+  Aux: @0x78ce12ba9800
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_sysClkConfig_BOARD_BootClockRUN/233 (g_sysClkConfig_BOARD_BootClockRUN)
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.g_sysClkConfig_BOARD_BootClockRUN (implicit_section)
+  Aux: @0x78ce12ba9780
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+BOARD_InitBootClocks/232 (BOARD_InitBootClocks)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.BOARD_InitBootClocks (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+CLOCK_CONFIG_FircSafeConfig/231 (CLOCK_CONFIG_FircSafeConfig)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.CLOCK_CONFIG_FircSafeConfig (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) local
+  Called by: 
+  Calls: 
+CLOCK_CONFIG_SetRtcClock/230 (CLOCK_CONFIG_SetRtcClock)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.CLOCK_CONFIG_SetRtcClock (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local nonfreeing_fn
+  Called by: 
+  Calls: 

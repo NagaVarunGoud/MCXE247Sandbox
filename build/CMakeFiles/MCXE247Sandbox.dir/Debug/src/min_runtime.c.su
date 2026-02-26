@@ -1,0 +1,2 @@
+./src/min_runtime.c:12:6:_start	8	static
+./src/min_runtime.c:22:6:__assert_func	4	static
